@@ -1,17 +1,17 @@
 import React from "react";
 
-import TaskList from "./TaskList";
+import { PureTaskList } from "./TaskList";
 import * as TaskStories from "./Task.stories";
 
 export default {
-  component: TaskList,
+  component: PureTaskList,
   title: "TaskList",
   //  Decorators are a way to provide arbitrary wrappers to stories.
   // In this case we’re using a decorator `key` on the default export to add some `padding` around the rendered component. T
   decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],
 };
 
-const Template = (args) => <TaskList {...args} />;
+const Template = (args) => <PureTaskList {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
