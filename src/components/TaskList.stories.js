@@ -5,7 +5,7 @@ import * as TaskStories from "./Task.stories";
 
 export default {
   component: PureTaskList,
-  title: "TaskList",
+  title: "components/TaskList",
   //  Decorators are a way to provide arbitrary wrappers to stories.
   // In this case we’re using a decorator `key` on the default export to add some `padding` around the rendered component. T
   decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],

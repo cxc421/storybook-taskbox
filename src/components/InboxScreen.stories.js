@@ -18,7 +18,7 @@ const store = {
 
 export default {
   component: PureInboxScreen,
-  title: "InboxScreen",
+  title: "screen/InboxScreen",
   decorators: [(story) => <Provider store={store}>{story()}</Provider>],
 };
 
